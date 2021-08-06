@@ -1,0 +1,43 @@
+.content-area h2{
+    margin: 0;
+    width: 100%;
+}
+.contato h2{
+    width: 100%;
+    font-size: 2rem;
+}
+.contato h2 a{
+    color: #fff;
+    padding-bottom: 2px;
+}
+.contato h2 a:hover{
+    color: #7a410c;
+    border-bottom: solid 2px;
+}
+.contato p{
+    color: #fff;
+    margin-bottom:0;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.cabecalho img{
+    border-radius: 100%;
+    width: 20%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 500px){
+   
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/calculadora.css">
+    <link rel="stylesheet" href="./assets/css/index_style.css">
+    <title>SSH NATUREZA</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">SSH NATUREZA</a>
+        </div>
+        <input type="checkbox" id="btn_menu">
+        <label for="btn_menu">&#9776;</label>
+        <nav class="menu" id="menu">
+            <ul>
+                <li>
+                <a href="index.html">Home</a>
+                </li>
+                <li>
+                <a href="leis.html">Leis da termodinâmica</a>
+                </li>
+                <li>
+                <a href="aplicacoes.html">Aplicações</a>
+                </li>
+                <li>
+                <a href="calculadora.html">Calculadora</a>
+                </li>
+                <li>
+                <a href="referencias.html">Referências</a>
+                </li>
+                <li>
+                <a href="integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="leis.html">Leis da termodinâmica</a>
+            <a href="aplicacoes.html">Aplicações</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="referencias.html">Referências</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="contato.html">Contato</a>
+        </nav>  
+    </header>
+    <div class="banner-area">
+        <div class="conteudo">
+            <h2>SSH NATUREZA</h2>
+            <h3>Apresenta: Termodinâmica</h3>
+        </div>
+    </div>
+    
+    <div class="content-area">
+        <div class="wrapper">
+            <h2>Calculadora</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="area-conteudo">
+        
+        <div class="fundo">
+            <div class="visor">
+                <textarea id="resultado" cols="40" rows="30" disabled></textarea>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="botao" onclick="clean()">C</button>
+                    <button class="botao" onclick="insert('7')">7</button>
+                    <button class="botao" onclick="insert('4')">4</button>
+                    <button class="botao" onclick="insert('1')">1</button>
+                    <button class="botao" onclick="insert('0')">0</button>
+                </div>
+                <div class="row">
+                    <button class="botao" onclick="back()"><</button>
+                    <button class="botao" onclick="insert('8')">8</button>
+                    <button class="botao" onclick="insert('5')">5</button>
+                    <button class="botao" onclick="insert('2')">2</button>
+                </div>
+                <div class="row">
+                    <button class="botao" onclick="insert('/')">/</button>
+                    <button class="botao" onclick="insert('9')">9</button>
+                    <button class="botao" onclick="insert('6')">6</button>
+                    <button class="botao" onclick="insert('3')">3</button>
+                    <button class="botao" onclick="insert('.')">.</button>
+                </div>
+                <div class="row">
+                    <button class="botao" onclick="insert('*')">X</button>
+                    <button class="botao" onclick="insert('+')">+</button>
+                    <button class="botao" onclick="insert('-')">-</button>
+                    <button class="botao"  onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row-2">
+                <h2>RENDIMENTO</h2>
+                <div class="input">
+                    <label>Trabalho</label>
+                    <input type="number" id="trabalho">
+                    <label>Quantidade de calor absorvida</label>
+                    <input type="number" id="qq">
+                    <button class="botao-ter" onclick="rendimento()"></button>
+                    <textarea id="text-area-rendimento" cols="30" rows="10" disabled></textarea>
+               </div>
+            </div>
+            <div class="row-2">
+                <h2>Ciclo de carnot</h2>
+                <div class="input">
+                    <label>Calor fornecido por aquecimento</label>
+                    <input type="number" id="QA">
+                    <label>Calor não transformado em trabalho</label>
+                    <input type="number" id="QB">
+                    <button class="botao-ter" onclick="carnot()"></button>
+                    <textarea id="text-area-carnot" cols="30" rows="10" disabled></textarea>
+                </div>
+            </div>
+            
+            <div class="row-2">
+                <h2>Variação de energia interna</h2>
+                <div class="input">
+                    <label>Calor</label>
+                    <input type="number" id="calor">
+                    <label>Trabalho</label>
+                    <input type="number" id="Trabalho">
+                    <button class="botao-ter" onclick="Einterna()"></button>
+                    <textarea id="text-area-e-interna" cols="30" rows="10" disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script .js"></script>
+</body>
+</html>

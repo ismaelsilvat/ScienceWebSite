@@ -1,0 +1,66 @@
+.form-group{
+    margin-bottom: 15px;
+    display: block;
+    color: #fff ;
+}
+.pg{
+    margin-top: 30px;
+}
+label{
+    font-family:"Poppins", sans-serif;
+}
+input{
+    width: 100%;
+    border-radius: 3px;
+    border-style: none;
+    height: 40px;
+    padding: 0 0 0 15px;
+    outline: 0;
+
+}
+input:hover{
+    cursor: pointer;
+}
+input:active{
+    box-shadow: #82aceb 0px 0 15px;
+    transition: all 0.5s ease;
+}
+input.active{
+    box-shadow: #82aceb 0px 0 15px;
+}
+textarea:hover{
+    cursor: pointer;
+    outline: 0;
+}
+textarea:active{
+    box-shadow: #82aceb 0px 0 15px;
+    transition: all 0.5s ease;
+    border: 0 none;
+    outline: 0;
+}
+input.active{
+    box-shadow: #82aceb 0px 0 15px;
+}
+
+textarea{
+    padding: 10px 0 0 15px;
+    width: 100%;
+    border-radius: 3px;
+    border-style: none;
+}
+.botao{
+    margin-top: 10px;
+    text-align: center;   
+}
+.lbotao{
+    border-radius: 7px;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #206ee4;
+    border-style: none;
+}
+.lbotao:hover{
+    cursor: pointer;
+    background-color: #0e2241;
+}
